@@ -20,7 +20,9 @@
   align-items: center;
   justify-content: space-between;
   padding-inline: var(--padding-x);
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(0.25rem);
+  -webkit-backdrop-filter: blur(0.25rem);
   box-shadow: none;
 
   transition: height 300ms ease, box-shadow 300ms ease;
@@ -81,6 +83,10 @@
 @media (width < 850px) {
   :root {
     --padding-x: 10vw;
+  }
+
+  .main-navigation.scrolled {
+    height: 8.5vh;
   }
 
   .navigation-logo img {
@@ -146,8 +152,6 @@
   .main-navigation.scrolled {
     height: 10vh;
     background-color: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(0.25rem);
-    -webkit-backdrop-filter: blur(0.25rem);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   }
 
