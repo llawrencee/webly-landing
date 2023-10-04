@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Import Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500&family=Playfair+Display&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet" />
+
+    <!-- Import Styles -->
+    <link rel="stylesheet" href="components.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Import Libraries -->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+
+    <title>Web.ly - Landing Page</title>
+  </head>
+  <body>
+    <header class="main-navigation">
+      <a href="#" class="navigation-logo">
+        <img src="/images/logo/logo-transparent.png" />
+      </a>
+      <ul class="navigation-list">
+        <li>
+          <button class="bx bx-x bx-md" id="menu-close"></button>
+        </li>
+        <li><a href="#" class="navigation-item active">For Students</a></li>
+        <li><a href="#" class="navigation-item">For Businesses</a></li>
+        <li><a href="#" class="navigation-item">About Us</a></li>
+        <li><a href="#" class="navigation-item">Projects</a></li>
+      </ul>
+      <div class="navigation-control">
+        <a href="#" class="navigation-action">Get Started</a>
+        <button class="bx bx-menu bx-md" id="menu-open"></button>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="highlight-objectives">
+        <h1 class="hero-text">
+          Websites that deliver
+          <span id="typing"></span>
+        </h1>
+
+        <div class="flyer-images">
+          <img
+            src="/images/proposal-1.png"
+            alt="A picture that details Web.ly's objectives, description, and its benefits" />
+          <img
+            src="/images/proposal-2.png"
+            alt="A picture that talks about the specifics of our business such as our tools, materials, competitors, and our location." />
+        </div>
+      </section>
+
+      <section class="used-technologies">
+        <p>The technologies we use for making our websites:</p>
+        <ul class="technology-list">
+          <div class="overlay"></div>
+          <li><img src="/images/html.webp" alt="HTML 5 Logo" /></li>
+          <li><img src="/images/css.webp" alt="CSS 3 Logo" /></li>
+          <li><img src="/images/js.webp" alt="Javascript Logo" /></li>
+          <li><img src="/images/netlify.webp" alt="Netlify Logo" /></li>
+        </ul>
+      </section>
+
+      <section style="height: 100vh"></section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
